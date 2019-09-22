@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- credits: -->
+
+<html lang="en">
+
+<head>
+    <title>Protolab project</title>
+    <meta charset="UTF-8">
+    <meta name="project" content="personal portfolio">
+    <meta name="keywords" content="HTML,CSS,XML, Package design, design">
+    <meta name="author" content="Ina Bivol">
+    <script src="jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Page Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sticky"><a href="index.html#finax"><button id="bu" type="button">&#60;</button></a></div>
+    <main>
+        <div class="header-img3">
+            <h1 id="text">Finax Flour</h1>
+        </div>
+    </main>
+
+
+    <!-- menu-->
+    <div id="header">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a></a>
+            <a></a>
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <div class="flex-container">
+        <div class="flex-item1">
+            <p>Finax is a company aiming to be the most value adding and flexible cereal products company in the Nordic market. In this projects, I have tried to give a new allure to Finax Company and rebranded the Logo as well as the package of one of the most purchased products from Finax, which is flour. I wanted this product to stand out amongst its competition and to clearly be understood as an “All purpose flour” product.
+            </p>
+        </div>
+
+
+        <div class="flex-item2">
+            <p>Jump to:</p>
+            <ul style="list-style-type:none;">
+                <li><a href="#example1">COLORS AND FONTS</a></li>
+                <li><a href="#example2">LOGO</a></li>
+                <li><a href="#example3">ILLUSTRATION</a></li>
+                <li><a href="#example4">FINAL SOLUTION</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <img id="screens" src="img/finax2.png">
+    <section>
+        <div class="content">
+            <h1><a id="example1"></a>COLORS AND FONTS</h1>
+            <div class="styletile">
+                <img class="finaxstyle" src="img/finaxcolor.png" alt="palette">
+                <img class="finaxstyle" src="img/finaxfonts.png" alt="fonts">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1><a id="example2"></a>LOGO</h1>
+            <img class="process" src="img/finaxlogo.png" alt="logo">
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1><a id="example3"></a>ILLUSTRATION</h1>
+            <img class="process1" src="img/paine.png" alt="illustration">
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h1><a id="example4"></a>FINAL SOLUTION</h1>
+            <img class="process1" src="img/NOUPAC.png" alt="package">
+
+        </div>
+    </section>
+
+    <!-- Menu Function -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

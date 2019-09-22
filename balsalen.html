@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!-- credits: -->
+
+<html lang="en">
+
+<head>
+   <title>Balsalen project</title>
+    <meta charset="UTF-8">
+     <meta name="project" content="personal portfolio">
+    <meta name="keywords" content="HTML,CSS,XML, portfolio, design, web design, graphic design, illustrations, code">
+    <meta name="author" content="Ina Bivol">
+    <script src="jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Page Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+     <!-- button-->
+    <div class="sticky"><a href="index.html#balsalen"><button id="bu" type="button">&#60;</button></a></div>
+    <main>
+        <div class="header-img1"><h1 id="text">Balsalen Store</h1></div>
+    </main>
+       
+       
+       <!-- menu-->
+        <div id="header">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a></a>
+            <a></a>
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    
+<div class="flex-container">
+   <div class="flex-item1">
+       <p>Balsalen is a store of artefacts and design objects, located in the center of Aarhus, in Denmark that me and my colleagues chose to cooperate with. Our main goal for this project was to analyse the real problems the store is facing and design the best solution for them. 
+Based on our thorough research we decided to focus on one target audience, which is women of middle age that like home decor and unique design pieces, and designed our solution based on a persona that matches these criteria. 
+Our solution for Balsalen store covers such areas as branding and web development and results in a fully responsive and functional web platform that allows our persona to visualise the products, purchase them online, find more information about the store and its location and contact it via different platforms. 
+</p>
+   </div>
+   
+   
+   <div class="flex-item2">
+      <p>Jump to:</p>
+       <ul style="list-style-type:none;">
+           <li><a href="#example1">LOGO</a></li>
+           <li><a href="#example2">SWOT</a></li>
+           <li><a href="#example3">PERSONA</a></li>
+           <li><a href="#example4">FINAL SOLUTION</a></li>
+       </ul>
+   </div>
+</div>
+   
+   <img id="screens" src= "img/balsback.png">
+    <section>
+        <div class="content">
+            <h1><a id="example1"></a>LOGO</h1>
+            <img class="process" src="img/balsalenlogo.png" alt="logo">
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1><a id="example2"></a>SWOT</h1>
+            <img class="process" src="img/swot3.png" alt="swot">
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1><a id="example3"></a>PERSONA</h1>
+            <img class="process1" src="img/persona.png" alt="persona">
+        </div>
+    </section>
+<section>
+        <div class="content4">
+            <h1><a id="example4"></a>FINAL SOLUTION</h1>
+            <div class="mockup">
+                <img class = "balsmock" src="img/iPad1.png" alt="mock1">
+                <img class = "balsmock" src="img/iPad2.png" alt="mock2">
+                <img class = "balsmock" src="img/iPad3.png" alt="mock3">
+                <img class = "balsmock"  src="img/iPad4.png" alt="mock4">
+                <img  class = "balsmock" src="img/iPad5.png"alt="mock5">
+                <img class = "balsmock" src="img/iPad6.png" alt="mock6">
+            </div>
+            
+        </div>
+    </section>
+    
+    
+  <!-- Menu Function -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

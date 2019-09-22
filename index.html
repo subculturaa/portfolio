@@ -1,0 +1,202 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+
+<head>
+    <title>Work page</title>
+    <meta charset="UTF-8">
+    <meta name="project" content="personal portfolio">
+    <meta name="keywords" content="HTML,CSS,XML, portfolio, design, web design, graphic design, illustrations, code">
+    <meta name="author" content="Ina Bivol">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="fullpage.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- menu-->
+    <div id="header">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a></a>
+            <a></a>
+            <a href="index.html" class="active">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="fullpage">
+        <!-- sect1 logo-->
+        <div class="section">
+            <div class="centering"><img src="img/logo.png" alt="logo" id="logo">
+            <img src="img/phrase.png"></div>
+        </div>
+
+        <!-- sect2 balsalen-->
+        <div class="section" id="first" class="sectionContent">
+            <div id="buUp"><a href="balsalen.html"><button type="button" id="bu">&#62;</button></a></div>
+            <div>
+                <a href="#">
+                    <span class="right"></span>
+                </a>
+            </div>
+            <div class="text">
+                <div class="slide">
+                    <h1>User Research</h1>
+                </div>
+                <div class="slide">
+                    <h1>Business Analysis</h1>
+                </div>
+                <div class="slide">
+                    <h1>Web Design</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- sect3 protolab-->
+        <div class="section" id="second" class="sectionContent">
+            <div id="buUp"><a href="protolab.html"><button type="button" id="bu">&#62;</button></a></div>
+            <div class="slide">
+                <h1>User Experience</h1>
+            </div>
+            <div class="slide">
+                <h1>User Interface</h1>
+            </div>
+            <div class="slide">
+                <h1>Web development</h1>
+            </div>
+            <div class="slide">
+                <h1>Advertising</h1>
+            </div>
+        </div>
+
+        <!-- sect4 finax-->
+        <div class="section" id="third" class="sectionContent">
+            <div id="buUp"><a href="finax.html"><button type="button" id="bu">&#62;</button></a></div>
+            <div class="slide">
+                <h1>Branding</h1>
+            </div>
+            <div class="slide">
+                <h1>Package design</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['work', 'balsalen', 'protolab', 'finax'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['', 'Balsalen', 'Protolab', 'Finax'],
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 1000,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            scrollOverflowReset: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            bigSectionsDestination: null,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            //Design
+            controlArrows: false,
+            verticalCentered: true,
+            sectionsColor: ['#fff', '#fff'],
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            parallax: false,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 62,
+                property: 'translate'
+            },
+            cards: false,
+            cardsOptions: {
+                perspective: 100,
+                fadeContent: true,
+                fadeBackground: true
+            },
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            lazyLoading: true,
+
+            //events
+            onLeave: function(origin, destination, direction) {},
+            afterLoad: function(origin, destination, direction) {},
+            afterRender: function() {},
+            afterResize: function(width, height) {},
+            afterReBuild: function() {},
+            afterResponsive: function(isResponsive) {},
+            afterSlideLoad: function(section, origin, destination, direction) {},
+            onSlideLeave: function(section, origin, destination, direction) {}
+        });
+
+    </script>
+
+    <!-- Menu Function -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>

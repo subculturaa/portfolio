@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Page Website</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a></a>
+            <a></a>
+            <a href="index.html">Work</a>
+            <a href="about.html" >About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <div class="flex-container2">
+        <div class="flex-item01">
+            <a href="mailto:ina.bivol21@gmail.com Subject=Hello%20again" target="_top"><img id="mail" src="img/mail.png"></a>
+        </div>
+
+
+        <div class="flex-item02">
+           <div class="flex-item1">
+               <a href="mailto:ina.bivol21@gmail.com Subject=Hello%20again" target="_top"><img id="contactMe" src="img/contactme.png"></a>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Menu Function -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
